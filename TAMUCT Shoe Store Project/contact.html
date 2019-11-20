@@ -1,0 +1,129 @@
+﻿<!-- This is the Contact Us page -->
+<!-- It includes a form, side bar information
+and a submit button that sends an email.
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TAMUCT ShoeStore - Contact Page</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.1.6.1.min.js"></script>
+<script type="text/javascript" src="js/simpleCart.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="index.html">Online Shoe Store</a></h1></div>
+        <div id="header_right">
+	    <p>
+            	Shopping Cart: <span class="simpleCart_total"></span>( <a href="shoppingcart.html"> <span class="simpleCart_quantity"></span> items</a> )
+			<br />
+			<a href="javascript:;" class="simpleCart_empty">Empty cart</a>
+			<br />
+			</p>
+		</div>
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_header -->
+    
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="contact.html" class="selected">Contact Us</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> <!-- end of ddsmoothmenu -->
+        
+    </div> <!-- END of templatemo_menubar -->
+    
+    <div id="templatemo_main">
+        <div id="content" class="center">
+        	<h1>Contact Us</h1>
+            <div class="content_half float_l">
+                <p>Please fill out the form below with any questions or concerns. We will get back to you as soon as possible. For urgent items, please contact our office directly.</p>
+                <div id="contact_form">
+                   <form method="post" name="contact" action="#">
+                        
+                        <label for="author">Name:</label> <input type="text" id="author" name="author" class="required input_field" />
+                        <div class="cleaner h10"></div>
+                        <label for="email">Email:</label> <input type="text" id="email" name="email" class="validate-email required input_field" />
+                        <div class="cleaner h10"></div>
+                        
+                        <label for="phone">Phone:</label> <input type="text" name="phone" id="phone" class="input_field" />
+                        <div class="cleaner h10"></div>
+        
+                        <label for="text">Message:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+                        <div class="cleaner h10"></div>
+                        
+                        <input type="submit" class="submit_btn" name="submit" id="submit" value="Send" a href="mailto:info@tamuctshoes.com"/>
+			<form action="mailto:info@tamuctshoes.com">
+
+                        
+                    </form>
+                </div>
+            </div>
+        <div class="content_half float_r">
+        	<h5>Primary Office</h5>
+			1001 Leadership Pl #5901, <br />
+			Killeen, TX 76549<br />
+			<br /><br />
+						
+			Phone: (254) 519-5438<br />
+			Email: <a href="mailto:info@tamuctshoes.com">info@tamuctshoes.com</a><br/>
+			
+            <div class="cleaner h40"></div>
+			
+
+            
+        </div>
+        
+        <div class="cleaner h40"></div>
+        
+        <iframe width="680" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.0459591421222!2d-97.77601638501625!3d31.05282008152673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865ab36056576edd%3A0xcb35607ce467b1c!2sTexas%20A%26M%20University-Central%20Texas!5e0!3m2!1sen!2sus!4v1574017405185!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            
+        </div> 
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_main -->
+    
+    <div id="templatemo_footer">
+
+		</p>
+
+		Copyright © 2019 <a href="#">TAMUCT ShoeStore</a> 
+    	
+    </div> <!-- END of templatemo_footer -->
+    
+</div> <!-- END of templatemo_wrapper -->
+</div> <!-- END of templatemo_body_wrapper -->
+
+</body>
+</html>

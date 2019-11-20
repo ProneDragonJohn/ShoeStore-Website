@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shoe Store</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.1.6.1.min.js"></script>
+<script type="text/javascript" src="js/simpleCart.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="index.html">Online Shoe Store</a></h1></div>
+        <div id="header_right">
+            	Shopping Cart: <span class="simpleCart_total"></span>( <a href="shoppingcart.html"> <span class="simpleCart_quantity"></span> items</a> )
+			<br />
+			<a href="javascript:;" class="simpleCart_empty">Empty cart</a>
+			<br />
+			</p>
+		</div>
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_header -->
+    
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> <!-- end of ddsmoothmenu -->
+    </div> <!-- END of templatemo_menubar -->
+    
+    <div id="templatemo_main">
+        <div id="content" class="center">
+        	<div id="slider-wrapper">
+                <div id="slider" class="nivoSlider">
+                    <img src="images/slider/02.jpg" alt="" />
+                    <a href="#"><img src="images/slider/01.jpg" alt="" title="New line of Sport Boots" /></a>
+                    <img src="images/slider/03.jpg" alt="" />
+                    <img src="images/slider/04.jpg" alt="" title="#htmlcaption" />
+                </div>
+                <div id="htmlcaption" class="nivo-html-caption">
+                    Check out our classic line of Converse shoes.
+                </div>
+            </div>
+            <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+            <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+            <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+            </script>
+        	<h1>New Products</h1>
+            <div class="product_box">
+	            <h3>Black Adidas</h3>
+            	<a href="#"><img src="images/product/01.jpg" alt="Shoes 1" /></a>
+                <p>Classic Black Adidas with white stripes.</p>
+                <p class="product_price">$ 80</p>
+                <a href="#" onclick="simpleCart.add({thumb: 'images/product/01.jpg', name:'Black Adidas', price: 80.00});" class="addtocart"></a>
+            </div>        	
+            <div class="product_box">
+            	<h3>High Top Red Converse</h3>
+            	<a href="#"><img src="images/product/02.jpg" alt="Shoes 2" /></a>
+                <p>Red Converse .</p>
+              <p class="product_price">$ 80</p>
+                <a href="#" onclick="simpleCart.add({thumb: 'images/product/02.jpg', name:'Red Converse', price: 80.00});" class="addtocart"></a>
+            </div>        	
+            <div class="product_box no_margin_right">
+            	<h3>White Red Adidas</h3>
+            	<a href="#"><img src="images/product/03.jpg" alt="Shoes 3" /></a>
+                <p>White Adidas with red stripes.</p>
+              <p class="product_price">$ 60</p>
+                <a href="#" onclick="simpleCart.add({thumb: 'images/product/03.jpg', name:'White Red Adidas', price: 60.00});" class="addtocart"></a>
+            </div>   
+            
+            <div class="cleaner"></div>
+                 	
+<div class="product_box">
+            	<h3>Red Adidas</h3>
+           	<a href="productdetail.html"><img src="images/product/04.jpg" alt="Shoes 4" /></a>
+            <p>Brand new quality Red Adidas with white stripes.</p>
+      <p class="product_price">$ 80</p>
+                <a href="#" onclick="simpleCart.add({thumb: 'images/product/04.jpg', name:'Red Adidas', price: 80.00});" class="addtocart"></a>
+            </div>        	
+            <div class="product_box">
+	            <h3>Sport Boots</h3>
+            	<a href="#"><img src="images/product/05.jpg" alt="Shoes 5" /></a>
+                <p>Brown sports boots for any of your outdoor needs.</p>
+              <p class="product_price">$ 150</p>
+                <a href="#" onclick="simpleCart.add({thumb: 'images/product/05.jpg', name:'Sport Boots', price: 150.00});" class="addtocart"></a>
+            </div>        	
+            <div class="product_box no_margin_right">
+            	<h3>DC Skate Shoes</h3>
+            	<a href="#"><img src="images/product/06.jpg" alt="Shoes 6" /></a>
+                <p>Grey, black, and yellow shoes for casual or skate wear.</p>
+                <p class="product_price">$ 70</p>
+                <a href="#" onclick="simpleCart.add({thumb: 'images/product/06.jpg', name:'DC Skate Shoes', price: 70.00});" class="addtocart"></a>
+            </div>        	
+        </div> 
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_main -->
+    
+    <div id="templatemo_footer">
+    	<p><a href="index.html">Home</a> | <a href="products.html">Products</a> | <a href="about.html">About</a> | <a href="checkout.html">Checkout</a> | <a href="contact.html">Contact Us</a>
+		</p>
+
+    	Copyright © 2019 <a href="#">TAMUCT ShoeStore</a> 
+    
+</div> <!-- END of templatemo_wrapper -->
+</div> <!-- END of templatemo_body_wrapper -->
+
+</body>
+</html>

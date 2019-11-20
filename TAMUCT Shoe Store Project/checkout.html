@@ -1,0 +1,155 @@
+<!-- This is the checkout page -->
+<!-- Includes a form for billing information
+and paypal driven checkout buttons.
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shoe Store - Check Out</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.1.6.1.min.js"></script>
+<script type="text/javascript" src="js/simpleCart.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="index.html">Online Shoe Store</a></h1></div>
+        <div id="header_right">
+		<p>
+            	  Shopping Cart: <span class="simpleCart_total"></span>( <a href="shoppingcart.html"> <span class="simpleCart_quantity"></span> items</a> )
+			<br />
+			<a href="javascript:;" class="simpleCart_empty">Empty cart</a>
+			<br />
+			</p>
+		</div>
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_header -->
+    
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="checkout.html" class="selected">Checkout</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> <!-- end of ddsmoothmenu -->
+        
+    </div> <!-- END of templatemo_menubar -->
+    
+    <div id="templatemo_main">
+        <div id="content" class="center">
+        	<h2>Checkout</h2>
+            <h5><strong>BILLING INFORMATION</strong></h5>
+            <div class="content_half float_l checkout">
+				Full Name (as shown on credit card):  
+                  <input type="text"  style="width:300px;"  />
+                <br />
+                <br />
+              Address:
+				<input type="text"  style="width:300px;"  />
+                <br />
+                <br />
+              City:
+                <input type="text"  style="width:300px;"  />
+                <br />
+                <br />
+                State/ZIP:
+                <input type="text"  style="width:300px;"  />
+            </div>
+            
+            <div class="content_half float_r checkout">
+            	E-MAIL
+				<input type="text"  style="width:300px;"  />
+                <br />
+                <br />
+          PHONE<br />
+				<span style="font-size:10px">YOU MAY BE GIVEN A CALL TO VERIFY AND COMPLETE THE ORDER.</span>
+                <input type="text"  style="width:300px;"  />
+            </div>
+            
+            <div class="cleaner h50"></div>
+            <h3>SHOPPING CART</h3>
+            <h4>TOTAL AMOUNT: <strong><span class="simpleCart_total"></span></strong></h4>
+			<p><input type="checkbox" />
+			I accept the <a href="#">terms of use</a> of this website.</p>
+            <table style="border:1px solid #CCCCCC;" width="100%">
+
+                <tr>
+                    <div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+    paypal.Buttons({
+        style: {
+            shape: 'rect',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'paypal',
+            
+        },
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '1'
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+        }
+    }).render('#paypal-button-container');
+</script>
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_main -->
+    
+    <div id="templatemo_footer">
+ 	<p><a href="index.html">Home</a> | <a href="products.html">Products</a> | <a href="about.html">About</a> | <a href="checkout.html">Checkout</a> | <a href="contact.html">Contact Us</a>
+		</p>
+
+		Copyright © 2019 <a href="#">TAMUCT ShoeStore</a> 
+    	
+    </div> <!-- END of templatemo_footer -->
+    
+</div> <!-- END of templatemo_wrapper -->
+</div> <!-- END of templatemo_body_wrapper -->
+
+</body>
+</html>
